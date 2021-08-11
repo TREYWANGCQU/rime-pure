@@ -123,7 +123,7 @@
 
 ## 安装方法
 
-- [查看安装方法](https://sivanlaai.github.io/pages/7128fc/)
+- ~~查看安装方法~~
 
 ## 更新历史
 
