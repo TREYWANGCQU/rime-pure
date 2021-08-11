@@ -1,3 +1,31 @@
+
+# 手机端自定义更改
+
+## 主要特征说明
+
+- 删除不需要配色
+- 键位重新安排
+- iconfont图标更新
+- 保留两种种输入法
+  - [极点五笔](https://github.com/KyleBing/rime-wubi86-jidian) 
+  - [小鹤双拼](https://www.flypy.com/index.html)
+
+# 简化配置
+
+小狼毫（PC端）
+1. 备份小狼毫输入法安装目录的data文件夹，备份~\AppData\Rime文件夹
+2. 文件夹weasel\data内所有文件复制到小狼毫输入法data目录覆盖
+3. 重新部署
+
+同文（安卓端）
+1. 备份sdcard\rime文件夹
+2. 文件夹trime\rime内所有文件复制到sdcard\rime目录覆盖
+3. 重新部署
+
+
+
+# 主分支说明
+
 ## 【rime 小狼毫\trime 同文】手机/PC一站式配置【简约皮肤\拼音搜狗词库\原创trime同文 四叶草九宫格拼音\四叶草拼音\小鹤双拼\极品五笔\QQ五笔\徐码\郑码】
 
 ## 说明
