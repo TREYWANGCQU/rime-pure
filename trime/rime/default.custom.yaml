@@ -6,7 +6,6 @@ customization:
   rime_version: 1.5.3
 patch:
   schema_list:
-    - {schema: clover}
     - {schema: wubi86_jidian}
-    - {schema: wubi86_jidian_pinyin}
-    - {schema: flypy}
+    - {schema: clover}
+    - {schema: numbers}

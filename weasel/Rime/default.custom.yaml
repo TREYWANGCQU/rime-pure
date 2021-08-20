@@ -2,11 +2,14 @@ customization:
   distribution_code_name: Weasel
   distribution_version: 0.14.3
   generator: "Rime::SwitcherSettings"
-  modified_time: "Sat Oct 31 18:18:48 2020"
+  modified_time: "Tus Aug 31 18:18:48 2021"
   rime_version: 1.5.3
 patch:
   schema_list:
-    - {schema: clover}
     - {schema: wubi86_jidian}
     - {schema: wubi86_jidian_pinyin}
-    - {schema: flypy}
+    - {schema: numbers}
+    
+ "switcher/hotkeys":  # 這個列表裏每項定義一個快捷鍵，使哪個都中
+    - "Control+Shfit+space"      # 添加 Ctrl+s
+    - F4

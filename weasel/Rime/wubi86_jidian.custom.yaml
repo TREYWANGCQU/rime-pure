@@ -1,4 +1,7 @@
 patch:
+
+  # 默认英文输出
+  "switches/@0/reset": 1
   # 增加转换
   'switches/@before 3':
     name: traditional_chinese
@@ -12,6 +15,11 @@ patch:
     name: emoji_suggestion
     reset: 0
     states: [ 😑️, 😁️ ]
+
+  ####關閉用戶詞典和字頻調整
+  translator/enable_user_dict: false
+  
+  speller/auto_select: false
   
   #######配置engine
   'engine/filters/@before 0':
