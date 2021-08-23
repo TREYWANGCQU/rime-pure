@@ -1,0 +1,6 @@
+# Rime table
+#@/db_name	user
+#@/db_type	tabledb
+#@/rime_version	1.5.3
+#@/tick	1
+好呢	hao ne	1
