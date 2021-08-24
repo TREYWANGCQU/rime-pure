@@ -2886,22 +2886,22 @@ preset_keyboards:
     vertical_gap: *FJH
     keys:
 
-      - {click: "@hotmail.com", width: 27, key_text_size: 14}
+      - {click: "@gmail.com", width: 27, key_text_size: 14}
       - {click: "@163.com", width: 27, key_text_size: 14}
       - {click: "@qq.com", width: 27, key_text_size: 14}
       - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       
-      - {click: "@gmail.com", width: 27, key_text_size: 14}
+      - {click: "@reaticle.com", width: 27, key_text_size: 14}
       - {click: "@126.com", width: 27, key_text_size: 14}
       - {click: "@outlook.com", width: 27, key_text_size: 14}
       - {click: K_symbols01_up, key_text_color: fyt, width: 19}
       
-      - {click: "@csu.edu.cn", width: 27, key_text_size: 14}
-      - {click: '@huawei.com', width: 27, key_text_size: 14}
-      - {click: "lyhhap@hotmail.com", width: 27, key_text_size: 10}
+      - {click: "@cqu.edu.cn", width: 27, key_text_size: 14}
+      - {click: 'y.wang', width: 27, key_text_size: 14}
+      - {click: "ywangcqu", width: 27, key_text_size: 14}
       - {click: K_symbols01_down, key_text_color: fyt, width: 19}
       
-      - {click: "", width: 27, key_text_size: 14}
+      - {click: "treywangcqu", width: 27, key_text_size: 14}
       - {click: "", width: 27, key_text_size: 14}
       - {click: "", width: 27, key_text_size: 14}
       - {click: K_back, width: 19}
