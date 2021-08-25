@@ -1,9 +1,9 @@
 # Trime default style settings
 # encoding: utf-8
 
-config_version: "2020年10月20日"
-name: 同文风增强版 #方案名称
-author: SivanLaai
+config_version: "2021年8月25日"
+name: Reaticle #方案名称
+author: Y.WANG 
 
 # 键盘候选
 candidate_setting:

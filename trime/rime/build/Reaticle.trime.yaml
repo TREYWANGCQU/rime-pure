@@ -1,8 +1,8 @@
 __build_info:
   rime_version: 1.5.3
   timestamps:
-    Reaticle.trime: 1629711570
-    Reaticle.trime.custom: 0
+    reaticle.trime: 1629834537
+    reaticle.trime.custom: 0
 android_keys:
   action:
     command: "命令"
