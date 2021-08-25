@@ -2729,7 +2729,7 @@ preset_keyboards:
         #"keys/@32/long_click": ""
 
     ascii_mode: 1
-    lock: false
+    lock: true
     name: "letter26键"
 
   number:
@@ -2737,7 +2737,7 @@ preset_keyboards:
     ascii_mode: 1 # 这个是ascii的键盘模式，为0切换ascii模式则会加载ascii_keyboard所指定的键盘
     author: "Y.WANG"
     name: "九宫格数字"
-    lock: false
+    lock: true
     # height: *VJG_Other
     # horizontal_gap: *NJL
     # vertical_gap: *NJH
