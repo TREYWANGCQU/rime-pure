@@ -2365,7 +2365,7 @@ preset_keyboards:
       - {click: 9}
       - {click: '@', key_back_color: bbs, key_text_color: tbs}
 
-      - {click: K_back, key_back_color: bgn, key_text_color: tgn}
+      - {click: K_return, key_back_color: bgn, key_text_color: tgn}
       - {click: '/', long_click: '\', key_back_color: bgn, key_text_color: tgn}
       - {click: ., long_click: K_symbol1, key_back_color: bgn, key_text_color: tgn}
       - {click: 0 }
@@ -2726,50 +2726,51 @@ preset_keyboards:
         #"keys/@9/long_click": "~"
         #"keys/@30/click": K_number
         #"keys/@32/click": space2
-        "keys/@32/long_click": ""
+        #"keys/@32/long_click": ""
 
     ascii_mode: 1
     lock: false
     name: "letter26键"
 
   number:
+    __include: /preset_keyboards/default_symbol
     ascii_mode: 1 # 这个是ascii的键盘模式，为0切换ascii模式则会加载ascii_keyboard所指定的键盘
-    author: "冷粼粼"
+    author: "Y.WANG"
     name: "九宫格数字"
     lock: false
-    height: *VJG_Other
-    horizontal_gap: *NJL
-    vertical_gap: *NJH
-    key_text_offset_y: *DtextY
-    key_symbol_offset_y: *DsymY
-    key_press_offset_x: 0
-    key_press_offset_y: 8
-    key_symbol_offset_x: *DsymX
-    width: 23
-    keys:
-      - {click: ",", width: *NUM_SYM_W, key_text_offset_x: 3, key_symbol_offset_x: -12, key_symbol_offset_y: 20, long_click: ".", key_symbol_color: key_symbol_color, key_back_color: szbdb, key_text_size: 16}
-      - {click: 1, composing: "'", key_back_color: szbdb, swipe_up: 1, key_text_size: 20}
-      - {click: 2, key_back_color: szbdb, swipe_up: 2, key_text_size: 20}
-      - {click: 3, key_back_color: szbdb, swipe_up: 3, key_text_size: 20}
-      - {click: BackSpace, width: *NUM_SYM_W, swipe_left: Clear, swipe_up: Candidate_switch1, key_back_color: bksb, hilited_key_back_color: bksh, hilited_key_text_color: szhct, key_symbol_color: bkss, key_text_color: bkst, key_text_size: 20}
+    # height: *VJG_Other
+    # horizontal_gap: *NJL
+    # vertical_gap: *NJH
+    # key_text_offset_y: *DtextY
+    # key_symbol_offset_y: *DsymY
+    # key_press_offset_x: 0
+    # key_press_offset_y: 8
+    # key_symbol_offset_x: *DsymX
+    # width: 23
+    # keys:
+    #   - {click: ",", width: *NUM_SYM_W, key_text_offset_x: 3, key_symbol_offset_x: -12, key_symbol_offset_y: 20, long_click: ".", key_symbol_color: key_symbol_color, key_back_color: szbdb, key_text_size: 16}
+    #   - {click: 1, composing: "'", key_back_color: szbdb, swipe_up: 1, key_text_size: 20}
+    #   - {click: 2, key_back_color: szbdb, swipe_up: 2, key_text_size: 20}
+    #   - {click: 3, key_back_color: szbdb, swipe_up: 3, key_text_size: 20}
+    #   - {click: BackSpace, width: *NUM_SYM_W, swipe_left: Clear, swipe_up: Candidate_switch1, key_back_color: bksb, hilited_key_back_color: bksh, hilited_key_text_color: szhct, key_symbol_color: bkss, key_text_color: bkst, key_text_size: 20}
 
-      - {click: "?", width: *NUM_SYM_W, key_text_offset_x: 3, key_symbol_offset_x: -12, key_symbol_offset_y: 20, long_click: "!", swipe_up: "!", key_symbol_color: key_symbol_color, key_back_color: szbdb, key_text_size: 16}
-      - {click: 4, key_back_color: szbdb, swipe_up: 4, key_text_size: 20}
-      - {click: 5, key_back_color: szbdb, swipe_up: Hide, key_text_size: 20}
-      - {click: 6, key_back_color: szbdb, swipe_up: 6, key_text_size: 20}
-      - {click: K_back, width: *NUM_SYM_W, swipe_up: Color_switch, key_back_color: szgnb, hilited_key_back_color: szgnh, key_text_size: 16}
+    #   - {click: "?", width: *NUM_SYM_W, key_text_offset_x: 3, key_symbol_offset_x: -12, key_symbol_offset_y: 20, long_click: "!", swipe_up: "!", key_symbol_color: key_symbol_color, key_back_color: szbdb, key_text_size: 16}
+    #   - {click: 4, key_back_color: szbdb, swipe_up: 4, key_text_size: 20}
+    #   - {click: 5, key_back_color: szbdb, swipe_up: Hide, key_text_size: 20}
+    #   - {click: 6, key_back_color: szbdb, swipe_up: 6, key_text_size: 20}
+    #   - {click: K_back, width: *NUM_SYM_W, swipe_up: Color_switch, key_back_color: szgnb, hilited_key_back_color: szgnh, key_text_size: 16}
 
-      - {click: "@", width: *NUM_SYM_W, key_text_offset_x: 3, key_symbol_offset_x: -12, key_symbol_offset_y: 16, send_bindings: false, long_click: "(){Left}", swipe_left: "(", swipe_right: ")", key_symbol_color: key_symbol_color, key_back_color: szbdb, key_text_size: 16}
-      - {click: 7, key_back_color: szbdb, swipe_up: 7, key_text_size: 20}
-      - {click: 8, key_back_color: szbdb, swipe_up: 8, key_text_size: 20}
-      - {click: 9, key_back_color: szbdb, swipe_up: 9, key_text_size: 20}
-      - {click: space3, width: *NUM_SYM_W, key_back_color: szgnb, hilited_key_back_color: szgnh, swipe_up: 0, key_text_size: 20}
+    #   - {click: "@", width: *NUM_SYM_W, key_text_offset_x: 3, key_symbol_offset_x: -12, key_symbol_offset_y: 16, send_bindings: false, long_click: "(){Left}", swipe_left: "(", swipe_right: ")", key_symbol_color: key_symbol_color, key_back_color: szbdb, key_text_size: 16}
+    #   - {click: 7, key_back_color: szbdb, swipe_up: 7, key_text_size: 20}
+    #   - {click: 8, key_back_color: szbdb, swipe_up: 8, key_text_size: 20}
+    #   - {click: 9, key_back_color: szbdb, swipe_up: 9, key_text_size: 20}
+    #   - {click: space3, width: *NUM_SYM_W, key_back_color: szgnb, hilited_key_back_color: szgnh, swipe_up: 0, key_text_size: 20}
       
-      - {click: K_symbol, width: *NUM_SYM_W, label: "符", key_back_color: szgnb, hilited_key_back_color: szgnh, swipe_up: 0, key_text_size: 16}
-      - {click: "…", key_text_offset_x: 3, key_symbol_offset_x: -12, key_symbol_offset_y: 18, send_bindings: false, long_click: "[]{Left}", swipe_left: "[", swipe_right: "]", key_symbol_color: key_symbol_color, key_back_color: szbdb, key_text_size: 16}
-      - {click: 0, key_back_color: szbdb, swipe_up: 0, key_text_size: 20}
-      - {click: "/", key_text_offset_x: 3, key_symbol_offset_x: -12, key_symbol_offset_y: 18, long_click: "=", key_symbol_color: key_symbol_color, key_back_color: szbdb, key_text_size: 16}
-      - {click: Return, width: *NUM_SYM_W, key_back_color: szhcb, hilited_key_back_color: szhch, key_text_color: szhct, hilited_key_text_color: szhct, key_symbol_color: hcs}
+    #   - {click: K_symbol, width: *NUM_SYM_W, label: "符", key_back_color: szgnb, hilited_key_back_color: szgnh, swipe_up: 0, key_text_size: 16}
+    #   - {click: "…", key_text_offset_x: 3, key_symbol_offset_x: -12, key_symbol_offset_y: 18, send_bindings: false, long_click: "[]{Left}", swipe_left: "[", swipe_right: "]", key_symbol_color: key_symbol_color, key_back_color: szbdb, key_text_size: 16}
+    #   - {click: 0, key_back_color: szbdb, swipe_up: 0, key_text_size: 20}
+    #   - {click: "/", key_text_offset_x: 3, key_symbol_offset_x: -12, key_symbol_offset_y: 18, long_click: "=", key_symbol_color: key_symbol_color, key_back_color: szbdb, key_text_size: 16}
+    #   - {click: Return, width: *NUM_SYM_W, key_back_color: szhcb, hilited_key_back_color: szhch, key_text_color: szhct, hilited_key_text_color: szhct, key_symbol_color: hcs}
 
   use:
     ascii_mode: 0
