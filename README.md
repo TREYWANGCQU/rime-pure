@@ -43,7 +43,7 @@ android平台中叫[同文/trime](https://github.com/osfans/trime)
   - 去掉大部分不用的键盘布局 
   - 修改数字键盘
 - 新增配色
-  - Reatcile
+  - Reaticle
 
 - 
 
