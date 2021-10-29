@@ -2,14 +2,14 @@ __build_info:
   rime_version: 1.5.3
   timestamps:
     clover.custom: 0
-    clover.key_bindings: 1629834536
+    clover.key_bindings: 1631895092
     clover.key_bindings.custom: 0
-    clover.schema: 1629834536
-    default: 1629834536
-    default.custom: 1629834536
-    key_bindings: 1629834536
+    clover.schema: 1631895093
+    default: 1631895093
+    default.custom: 1631895093
+    key_bindings: 1631895093
     key_bindings.custom: 0
-    symbols: 1629834537
+    symbols: 1631895093
     symbols.custom: 0
 ascii_composer:
   good_old_caps_lock: true
