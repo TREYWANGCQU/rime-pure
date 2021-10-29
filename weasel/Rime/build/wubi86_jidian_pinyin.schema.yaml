@@ -1,16 +1,16 @@
 __build_info:
   rime_version: 1.5.3
   timestamps:
-    default: 1561218646
-    default.custom: 1635498631
+    default: 1635501090
+    default.custom: 1635500932
     key_bindings: 1629894020
     key_bindings.custom: 0
     punctuation: 1561218646
     punctuation.custom: 0
     symbols: 1629894020
     symbols.custom: 0
-    wubi86_jidian_pinyin.custom: 1629894020
-    wubi86_jidian_pinyin.schema: 1629894020
+    wubi86_jidian_pinyin.custom: 1635405660
+    wubi86_jidian_pinyin.schema: 1635405660
 abc_segmentor:
   extra_tags:
     - reverse_lookup

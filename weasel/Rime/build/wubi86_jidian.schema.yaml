@@ -1,8 +1,8 @@
 __build_info:
   rime_version: 1.5.3
   timestamps:
-    default: 1561218646
-    default.custom: 1635498735
+    default: 1635501090
+    default.custom: 1635500932
     key_bindings: 1629894020
     key_bindings.custom: 0
     punctuation: 1561218646
@@ -10,7 +10,7 @@ __build_info:
     symbols: 1629894020
     symbols.custom: 0
     wubi86_jidian.custom: 1635405660
-    wubi86_jidian.schema: 1635405660
+    wubi86_jidian.schema: 1635500532
 emoji_suggestion:
   opencc_config: emoji.json
   option_name: emoji_suggestion
@@ -304,7 +304,7 @@ speller:
   max_code_length: 4
 switches:
   - name: ascii_mode
-    reset: 0
+    reset: 1
     states: ["中", "英"]
   - name: full_shape
     states: ["半", "全"]
