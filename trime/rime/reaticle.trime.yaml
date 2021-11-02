@@ -1,7 +1,7 @@
 # Trime default style settings
 # encoding: utf-8
 
-config_version: "2021年8月25日"
+config_version: "2021年10月29日"
 name: Reaticle #方案名称
 author: Y.WANG 
 
@@ -90,6 +90,11 @@ colors:
 style:
   auto_caps: false #自動句首大寫:true|false|ascii
   background_dim_amount: 0.5
+  root_background: keyboard_back_color # 整个键盘区+候选栏的背景图/色
+  liquid_keyboard_switch: { toggle: _liquid_keyboard, send: Mode_switch, states: [ 更多, 更多 ] }
+  liquid_keyboard_clipboard: {label: 剪贴板, send: function, command: liquid_keyboard, option: "剪贴"}
+  handwriting: {toggle: _handwriting, send: Mode_switch, states: [ 手写, 手写 ] }
+  handwriting1: {toggle: _handwriting, send: Mode_switch, states: [ 写, 写 ] }
   candidate_font: han.ttf #候选字型
   candidate_padding: 5 #候选项内边距
   candidate_spacing: *HXJJ #候选间距
@@ -190,6 +195,12 @@ fallback_colors:
   preview_back_color: key_text_color
   preview_text_color: key_back_color
   shadow_color: border_color
+  root_background: back_color # 整个键盘区+候选栏的背景图/色
+  candidate_background: back_color #候选栏的整体背景图/色
+  keyboard_back_color: border_color #键盘去的背景图/色
+  liquid_keyboard_background: keyboard_back_color # liquidKeyboard的背景图/色
+  text_back_color: back_color #编码区背景，即悬浮窗背景
+  long_text_back_color: key_back_color #长文本按键的背景(剪贴板）
   
 #配色方案
 preset_color_schemes:
@@ -2196,7 +2207,7 @@ preset_keyboards:
     key_press_offset_x: 0
     key_press_offset_y: 8
     key_symbol_offset_x: *DsymX
-    label_transform: uppercase #uppercase|none 中文模式下的字母标签自动大写
+    label_transform: uppercase #uppercase|none 中文模式下的字母标签自动大写     
     keys:
       # 第一行
       - {click: q, long_click: '!', swipe_up: 1, key_text_color: TEX, key_back_color: AAA, hilited_key_back_color: AAH}
@@ -2221,7 +2232,7 @@ preset_keyboards:
       - {click: k, long_click: '""{Left}', swipe_up: '""{Left}', swipe_left: '"', swipe_right: '"', key_text_color: TEX, key_back_color: BBB, hilited_key_back_color: BBH}
       - {click: l, long_click: "''{Left}", swipe_up: "''{Left}", swipe_left: "'", swipe_right: "'", key_text_color: TEX, key_back_color: CCC, hilited_key_back_color: CCH}
     
-       # 第三行
+      # 第三行
       - {click: Shift_L, composing: Escape, width: 15}
       - {click: z, long_click: "`", swipe_up: "`", key_text_color: TEX, key_back_color: AAA, hilited_key_back_color: AAH}
       - {click: x, long_click: "^",  swipe_up: cut, key_text_color: TEX, key_back_color: BBB, hilited_key_back_color: BBH}
@@ -2827,22 +2838,36 @@ preset_keyboards:
     key_press_offset_x: 0
     key_press_offset_y: 0
     key_symbol_offset_x: *DsymX
-    keys: 
-      # 第一行
-      - {click: Theme_settings1, hint: 主题, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
-      - {click: Color_switch, hint: 配色, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
-      - {click: Menu1, hint: 方案, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
-      - {click: Settings, hint: 设置, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
-      - {click: Deploy, hint: 布署, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
-      
-      - {click: Hint_switch1, hint: 提示, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
-      - {click: Comment_switch1, hint: 注解, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
-      - {click: Candidate_switch1, hint: 候选窗, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
-      - {click: K_defaultMR, hint: 默认, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
-      - {click: K_defaultVJ6, hint: 助记(白色), key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
-      
-      - {width: 25}
-      - {click: K_back, width: 50, key_text_offset_y: 0}
+    keyboards: [main_menu,clipboard, history, exit]  #tab列表
+    main_menu:
+      name: 菜单
+      type: SINGLE
+      keys: 
+        # 第一行
+        - {click: Theme_settings1, hint: 主题, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
+        - {click: Color_switch, hint: 配色, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
+        - {click: Menu1, hint: 方案, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
+        - {click: Settings, hint: 设置, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
+        - {click: Deploy, hint: 布署, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
+        
+        - {click: Hint_switch1, hint: 提示, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
+        - {click: Comment_switch1, hint: 注解, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
+        - {click: Candidate_switch1, hint: 候选窗, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
+        - {click: K_defaultMR, hint: 默认, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
+        - {click: K_defaultVJ6, hint: 助记(白色), key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
+        
+        - {width: 25}
+        - {click: K_back, width: 50, key_text_offset_y: 0}
+    clipboard:
+      type: CLIPBOARD
+      name: 剪贴
+    history:
+      name: 最近
+      type: HISTORY
+    exit:
+      name: 返回
+      type: NO_KEY
+      keys: EXIT
      
     
   menux:
@@ -5479,7 +5504,6 @@ android_keys:
     select: 选择
     toggle: 状态
     send: 按键
-
 preset_keys:
   # 安卓
   BRIGHTNESS_DOWN: {label: 亮度-, send: BRIGHTNESS_DOWN}
@@ -5882,7 +5906,7 @@ preset_keys:
   date_time: {label: time, send: function, command: date, option: "yyyy-MM-dd  HH:mm:ss"}
   HDSS: {label: 金山, functional: false, send: function, command: run, option: " http://www.iciba.com/word?w=%3$s"} # 搜索网页: %3$s为光标前一个字符或选中字符或未上屏首选词条
   BDHY: {label: Ⓓ, send: function, command: run, option: "https://hanyu.baidu.com/s?wd=%3$s"}
-  XHIX: {label: 鹤形, send: function, command: run, option: "http://www.xhup.club/?search_word=%4$s"}
+  XHIX: {label: 鹤形, send: function, command: run, option: "https://www.xhup.club/?search_word=%4$s"}
   BDSS: {label: 🔍️, send: function, command: run, option: "https://www.baidu.com/s?wd=%4$s"} # 搜索网页：%4$s为光标前所有字符或选中字符或未上屏首选词条
   LLQ: {label: Ⓛ, send: function, command: web_search, option: "%4$s"} # 直达光标前http开头的网址或搜索光标前内容
   Deploy: {label: ♻, send: function, command: broadcast, option: "com.osfans.trime.deploy"}

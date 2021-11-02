@@ -16,6 +16,7 @@ android平台中叫[同文/trime](https://github.com/osfans/trime)
 ## 保留两种输入法
 - [四叶草简体拼音](https://github.com/fkxxyz/rime-cloverpinyin)
 - [极点五笔](https://github.com/KyleBing/rime-wubi86-jidian) 
+- 同步更新剪贴板功能（Android端），参考链接osfans/trime commit >>>[b39e356e890b6f192ae9995143504547e2c1bb03](https://github.com/osfans/trime/commit/b39e356e890b6f192ae9995143504547e2c1bb03#diff-49879e4c0a6eb2d754d45b923d2858cf9e77bbe18f345fce20df5c3ca520378b)
 
 
 
@@ -23,13 +24,13 @@ android平台中叫[同文/trime](https://github.com/osfans/trime)
 
 小狼毫（windows端）
 1. 备份小狼毫输入法安装目录的```data```文件夹，备份```~\AppData\Rime```文件夹(默认)
-2. 文件夹```weasel\Rime```内所有文件复制到小狼毫输入法```~\AppData\Rime```目录覆盖
-3. 文件夹```weasel\data```内所有文件复制到小狼毫输入法安装目录的```data```目录覆盖(此步可跳过)
+2. 文件夹```weasel\Rime```内所有文件复制到小狼毫输入法```~\AppData\Rime```目录覆盖(**或指定用户目录**)
+3. 文件夹```weasel\data```内所有文件复制到小狼毫输入法安装目录的```data```目录覆盖
 4. 重新部署
 
 同文（安卓端）
 1. 备份```sdcard\rime```文件夹(默认)
-2. 文件夹```trime\rime```内所有文件复制到```sdcard\rime```目录覆盖
+2. 文件夹```trime\rime```内所有文件复制到```sdcard\rime```目录覆盖(**或指定用户目录**)
 3. 重新部署
   
 ## windows端
@@ -38,14 +39,16 @@ android平台中叫[同文/trime](https://github.com/osfans/trime)
 
 ## Android端
 
-为求方便，避免重复造轮子，基本是tongwenfeng.trime.yaml->reaticle.trime.yaml，
+为求方便，避免重复造轮子，基本是 同文风增强版.trime.yaml->reaticle.trime.yaml，
 - 键位调整
   - 去掉大部分不用的键盘布局 
   - 修改数字键盘
+  - 修改默认键盘布局
 - 新增配色
   - Reaticle
-
-- 
+- 重新布局主菜单键盘
+- 整合剪贴板到主菜单键盘  
+ 
 
 
 
