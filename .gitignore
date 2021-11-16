@@ -2,10 +2,8 @@ qq2Rime.py
 QQ五笔系统词库_2021_2_7.txt
 QQ五笔系统词库_2021_2_7.yaml
 wubi86_jidian.dict.yaml
-\trime\rime\build\
-\trime\rime\sync\
-\trime\rime\opencc\
-\weasel\Rime\build\
-\weasel\Rime\opencc\
-\weasel\Rime\trash\
-\Res\
+/trime/rime/build
+/trime/rime/sync
+/weasel/Rime/build
+/weasel/Rime/trash
+/Res
