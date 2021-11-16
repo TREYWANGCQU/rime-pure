@@ -2827,21 +2827,26 @@ preset_keyboards:
 
   menu:
     ascii_mode: 0
-    author: "flypy.com"
+    author: "Y.WANG<y.wang@reaticle.com>"
     height: *VJG_Other
     width: 20
     horizontal_gap: 10
-    vertical_gap: *NJL
     keyboard_back_color: xdb
     key_text_offset_y: *DtextY
     key_symbol_offset_y: *DsymY
     key_press_offset_x: 0
     key_press_offset_y: 0
     key_symbol_offset_x: *DsymX
+    key_height: 40      #按键高度
+    key_height_land: 40 #横屏模式按键高度
+    single_width: 60    #single类型的按键宽度
+    vertical_gap: 1     #纵向按键间隙
+    margin_x: 0.5 
+
     keyboards: [main_menu,clipboard, history, exit]  #tab列表
     main_menu:
-      name: 菜单
       type: SINGLE
+      name: 菜单
       keys: 
         # 第一行
         - {click: Theme_settings1, hint: 主题, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
@@ -2862,11 +2867,12 @@ preset_keyboards:
       type: CLIPBOARD
       name: 剪贴
     history:
-      name: 最近
       type: HISTORY
+      name: 最近
+      
     exit:
-      name: 返回
       type: NO_KEY
+      name: 返回
       keys: EXIT
      
     
