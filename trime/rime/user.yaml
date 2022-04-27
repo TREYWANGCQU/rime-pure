@@ -1,10 +1,5 @@
 var:
-  last_build_time: 1631895106
-  option:
-    extended_charset: true
-    full_shape: false
+  last_build_time: 1650455062
   previously_selected_schema: wubi86_jidian
   schema_access_time:
-    clover: 1635427330
-    wubi86_jidian: 1635427342
-    wubi86_jidian_pinyin: 1629710407
+    wubi86_jidian: 1650455078
